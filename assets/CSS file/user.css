@@ -1,0 +1,37 @@
+.user-add-btn{
+    min-width: 6%;
+}
+@media (max-width: 575.98px) {
+    /* XS */
+    .footer {
+        color: #a2c787;
+        padding: 10px;
+        position: absolute;
+        top:145%;
+        bottom: 0;
+        right: 0;
+    }
+    .user-add-btn{
+        min-width: 13%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* MD */
+    .user-add-btn{
+        min-width: 13%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /* SM */
+.user-add-btn{
+    min-width: 13%;
+}
+.footer {
+    color: #a2c787;
+    padding: 10px;
+    position: absolute;
+    top:152%;
+    bottom: 0;
+    right: 0;
+}
+}

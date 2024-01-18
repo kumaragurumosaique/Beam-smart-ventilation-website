@@ -1,0 +1,92 @@
+.list-group-item{
+  border: 5px solid black;
+}
+.custom-col1 .list-group-item:hover{
+  background-color: #A9D18D;
+  color: white;
+}
+.custom-col1{
+background-color:#EDEDED;
+}
+@media (max-width: 575.98px) {
+  .footer {
+      color: #a2c787;
+      padding: 10px;
+      position: absolute;
+      top:90%;
+      bottom: 0;
+      right: 0;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Custom styles for small screens (sm) */
+  .footer {
+
+    color: #a2c787;
+    padding: 10px;
+    position: absolute;
+    top:90%;
+    bottom: 0;
+    right: 0;
+  }
+  .custom-col1{
+    padding-left: 0px;
+    }
+   
+}
+/* Medium Devices, Desktops */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Custom styles for medium screens (md) */
+  .footer {
+
+    color: #a2c787;
+    padding: 10px;
+    position: absolute;
+    top:90%;
+    bottom: 0;
+    right: 0;
+  }
+  .custom-col1{
+    margin-left: 0px;
+    }
+}
+/* Large Devices, Desktops */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .footer {
+    color: #a2c787;
+    padding: 10px;
+    position: absolute;
+    top:90%;
+    bottom: 0;
+    right: 0;
+  }
+  .custom-col1{
+    margin-left: 61px;
+    background-color: #EDEDED;
+    }
+   
+  /* Custom styles for large screens (lg) */
+}
+
+/* Extra Large Devices, Large Desktops */
+@media (min-width: 1200px) {
+  /* Custom styles for extra-large screens (xl) */
+  .footer {
+    color: #a2c787;
+    padding: 10px;
+    position: absolute;
+    top:90%;
+    bottom: 0;
+    right: 0;
+  }
+  .custom-col1{
+    margin-left: 61px;
+  height: 93vh;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.custom-col1{
+  margin-left: 61px;
+  height:100vh;
+  }
+}

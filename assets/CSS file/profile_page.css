@@ -1,0 +1,72 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    margin-top:5rem;
+        }
+    .card{
+        width: 842px;
+        height:650px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        padding: 30px 20px 20px 30px;
+    }
+    .img_profile_page{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: fit;
+    }
+    .camera_img{
+        height: 20px;
+        width: 20px;
+        text-align: center;
+    }
+    .update_profile_btn{
+        background-color: #A9D18D;
+        color: white !important;
+        text-decoration: none;
+    }
+    
+    
+    body{
+        overflow-x: hidden;
+    }
+    .card-body{
+        border: none;
+    }
+    
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .card{
+            width: 600px;
+            height:650px;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        }
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+                .card{
+                   max-width: 500px;
+                }
+    }
+    @media (max-width: 575.98px) {
+        .card{
+            max-width: 370px;
+            padding: 0px 15px 0px 15px;
+         }
+         .img_profile_page{
+            height: 150px;
+            width: 150px;
+         }
+         .update_profile_btn{
+            margin-bottom: 15px;
+         }
+         
+    
+    }
+    .custom-file-input{
+        display:none;
+    }
+    .upload_btn{
+        background-color: white !important;
+        border: none;
+    }

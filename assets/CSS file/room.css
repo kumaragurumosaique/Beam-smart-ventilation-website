@@ -1,0 +1,202 @@
+.room_delete{
+  color: red;
+}
+.room_update{
+color: #aaa8a8;
+}
+.room_delete{
+color: red;
+}
+.footer p{
+color: #a2c787 !important; }
+main .add-user-btn{
+background-color: #A9D18D; 
+color: white;
+background: white;
+}
+thead tr .table_heads{
+  font-weight: 200;
+  color: #949090;
+  background:#F2F2F2;
+
+}
+/* toggle in label designing */
+  input[type="checkbox"]{
+      position: relative;
+      width: 55px;
+      height: 25px;
+      background: #BDBEC0;
+      -webkit-appearance: none;
+      border-radius: 20px;
+      outline: none;
+      transition: .4s;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+      cursor:pointer;
+    }
+    input:checked[type="checkbox"]{
+      background:#8EC641;
+    }
+    input[type="checkbox"]::before{
+      z-index: 2;
+      position: absolute;
+      content: "";
+      left: 7px;
+      right:0;
+      width: 18px;
+      height: 18px;
+      top:4px;
+      background: #fff;
+      border-radius: 50%;
+      transform: scale(1.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: .4s;
+    }
+    input:checked[type="checkbox"]::before{
+      left: 31px;
+    }
+    .toggle{
+      position: relative;
+      display: inline;
+    }
+    label{
+      position: absolute;
+      color: #fff;
+      pointer-events: none; 
+    }
+    .onbtn{      
+      left:6px;
+      bottom: 10px;
+      top: -5px;
+      font-size: 12px;
+    }
+    .ofbtn{
+      left: 30px;
+      top: -5px;
+      color:#fff;
+      font-size: 10px;
+      font-weight: 300;  
+  }
+
+.btn{
+  background-color: #A9D18D !important; 
+  color: #fff !important;
+}
+.sidebar-icon-img{
+  width: 30px;
+  height: 30px;
+}
+
+.main_content{
+  margin-left: 50px;
+}
+.sidebar-menu-icon{
+  width: 20px;
+  height: 20px;
+}
+.sidebar-icon-img{
+  width: 30px;
+  height: 30px;
+}
+.main_content{
+  margin-left: 50px;
+}
+.sidebar-menu-icon{
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 656.96px) {
+  .main_content{
+    margin-left: 0px;
+  }
+  .footer {
+    color: #a2c787;
+    padding: 10px;
+    position: absolute;
+    top:150%;
+    bottom: 0;
+    right: 0;
+  }
+  .onbtn{     
+    left: 6px;
+    bottom: -5px;
+    top:-5px;
+    font-size: 12px;
+  }
+  .ofbtn{
+    left: 29px;
+    top: -5px;
+    color:#fff;
+    font-size: 10px;
+    font-weight: 300;  
+}
+input[type="checkbox"]{
+  position: relative;
+  width: 55px;
+  height: 25px;
+  background: #BDBEC0;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  outline: none;
+  transition: .4s;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+input:checked[type="checkbox"]{
+  background:#8EC641;
+}
+input[type="checkbox"]::before{
+  z-index: 2;
+  position: absolute;
+  content: "";
+  left: 7px;
+  right:0;
+  width: 18px;
+  height: 18px;
+  top:3.5px;
+  background: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: .4s;
+}
+input:checked[type="checkbox"]::before{
+  left: 31px;
+}
+.toggle{
+  position: relative;
+  display: inline;
+}
+label{
+  position: absolute;
+  color: #fff;
+  pointer-events: none; 
+}
+}
+@media only screen and (max-width: 767px) {
+  /* SM */
+.footer {
+  color: #a2c787;
+  padding: 10px;
+  position: absolute;
+  top:153%;
+  bottom: 0;
+  right: 0;
+}
+}
+
+.label_modals{
+color: #aaa8a8;
+}
+.form-control:focus {
+border: none;
+box-shadow: none;
+}
+
+
+/* MODAL VIEW */
+.modal-title{
+color: #aaa8a8;
+}
+.delete_action_modal{
+color: red;
+}

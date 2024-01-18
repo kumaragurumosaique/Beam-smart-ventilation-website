@@ -1,0 +1,99 @@
+*{
+    top: 0;
+    left: 0;
+     margin: 0;
+     padding: 0;
+     box-sizing:border-box
+ }
+ body {
+     height: 100vh;
+     background: #ffffff;
+ }
+ .sidebar {
+     position: absolute; 
+     z-index: 20; 
+     height: 100vh; 
+     width: 60px; 
+     background-color:#ffffff;
+     color: #514f4f;
+     overflow: hidden;
+     transition: 0.5s;
+     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1); 
+ }
+ .sidebar:hover {
+     width: 300px;
+ }
+ .sidebar ul{
+ z-index: 15;
+     position: relative;
+     height: 100vh;
+     padding: 0;
+     margin-top: 65px;
+ }
+ .sidebar ul li{
+     list-style: none;
+ }
+ .sidebar ul li:hover{
+     background:#D4E8C6;
+ }
+ .sidebar ul li a{
+     position: relative;
+     display: flex;
+     white-space: nowrap;
+     text-decoration: none;
+ }
+ .sidebar ul li a .icon{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 60px;
+     min-width: 60px;
+     font-size: 1.5rem;
+     color: #000000;
+ }
+ .sidebar ul li a .text{
+     position: relative;
+     height: 60px;
+     display: flex;
+     align-items: center;
+     font-size: 1rem;
+     color: #000000;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+ }
+ .sidebar-icon-img{
+         width: 30px;
+         height: 30px;
+ }
+ .sidebar ul li .logo{
+     margin-bottom: 50px;
+ }
+ .sidebar ul li .logo .icon{
+     font-size: 2em;
+ }
+ .sidebar ul li .logo:hover{
+     background: #FFFFFF;
+ }
+ .sidebar ul li .logo .text{
+     font-size: 1.2em;
+     font-weight: 500;
+ }
+ 
+ .sidebar_icon{
+     width: 30px;
+     height: 30px;   
+ }
+ 
+ 
+ @media screen and (max-width: 600px) {
+     .sidebar{
+         display: none;
+    }
+  }
+  @media screen and (max-width:990px) {
+     .sidebar{
+         display: none;
+    }
+  }
+  
