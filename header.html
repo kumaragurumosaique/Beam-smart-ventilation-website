@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/png" href="./assets/images/company_logo2.png"/>
+  <link href="./Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/CSS file/header.css" />
+  <link rel="stylesheet" href="./assets/CSS file/sidebar.css">
+
+  <title>Header</title>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container-fluid">
+      
+      <div class="dropdown ms-auto order-1" id="dashboard_dropdown"><span>BEAM TECH</span>
+        <img src="./assets/images/profile.png" class="profile_img border-0" alt="" data-bs-toggle="dropdown" aria-expanded="false">
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="profile_page.html">プロファイル</a></li>
+            <li><a class="dropdown-item" href="index.html">ログアウト</a></li>
+          </ul>
+        </div>
+      <button class="navbar-toggler  d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BEAM TECH</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex justify-content-start">
+          <ul class="navbar-nav text-start fs-5 w-100">
+            <li class="logo">
+              <a class="nav-link" href="dashboard.html">
+                <span class="icon_menu"><img class="img-menu-icon" src="./assets/images/dashboard.png" alt=""></span>
+                <span class="text">ダッシュボード</span></a>
+            </li>
+            <li class="logo">
+              <a class="nav-link" href="room.html">
+                <span class="icon_menu"><img class="img-menu-icon" src="./assets/images/door-open.png" alt=""></span>
+                <span class="text">部屋設定</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="thermometer.html">
+                <span class="icon_menu"><img class="img-menu-icon "  src="./assets/images/thermometer.png" alt=""></span>
+                <span class="text">設定</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analysis.html">
+                <span class="icon_menu"><img class="img-menu-icon" src="./assets/images/market-research.png" alt=""></span>
+                <span class="text"> 分析</span>
+               </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="user.html">
+                <span class="icon_menu"><img class="img-menu-icon" src="./assets/images/man.png" alt=""></span>
+                <span class="text">ユーザ</span>
+               </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="icon_menu"><img class="img-menu-icon" src="./assets/images/log-out.png" alt=""></span>
+                <span class="text">ログアウト</span>
+               </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+  <script src="./assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+    const tempContainer = document.createElement('div');
+    tempContainer.innerHTML = data;
+    
+    const specificContent = tempContainer.querySelector('#sidebar');
+    
+    document.getElementById('sidebar').appendChild(specificContent);
+    
+    })
+    .catch(error => console.error('Error fetching content:', error));
+    </script> 
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="./assets/images/company_logo2.png"/>
+    <link rel="stylesheet" href="./assets/CSS file/sidebar.css">
+    <link rel="stylesheet" href="./assets/CSS file/style.css">
+    <link rel="stylesheet" href="./assets/CSS file/header.css">
+    <link rel="stylesheet" href="./assets/CSS file/dashboard.css">  
+    <link rel="stylesheet" href="./assets/CSS file/footer.css">
+    <link rel="stylesheet" href="./assets/CSS file/profile_page.css">
+    <link href="./assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+    <title>プロフィール</title>
+</head>
+<body>
+   <header id="header">
+   </header>
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li class="logo">
+        <a class="active" href="dashboard.html">
+            <span class="icon"><img src="./assets/images/dashboard.png" class="sidebar-icon-img" alt=""></span>
+<span class="text">ダッシュボード</span>
+        </a>
+    </li>
+    <li>
+        <a class="active" href="room.html">
+            <span class="icon"><img src="./assets/images/door-open.png" class="sidebar-icon-img" alt=""></span>
+<span class="text">部屋設定</span>
+        </a>
+    </li>
+    <li>
+        <a class="active" href="thermometer.html">
+            <span class="icon"><img src="./assets/images/thermometer.png" class="sidebar-icon-img" alt=""></span>
+<span class="text">設定</span>
+        </a>
+    </li>
+    <li>
+        <a class="active" href="analysis.html">
+            <span class="icon"><img src="./assets/images/market-research.png" class="sidebar-icon-img" alt=""></span>
+<span class="text">分析</span>
+        </a>
+    </li>
+    <li>
+        <a class="active" href="user.html">
+            <span class="icon"><img src="./assets/images/man.png" class="sidebar-icon-img" alt=""></span>
+<span class="text">ユーザ</span>
+        </a>
+    </li>
+    <li>
+        <a class="active" href="index.html">
+            <span class="icon"><img src="./assets/images/log-out.png" class="sidebar-icon-img" alt=""></span>
+<span class="text">ログアウト</span>
+        </a>
+    </li>
+</ul>
+</div>
+<main>
+    <div class="content">
+    <div class="container">
+        <div class="card profile-card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="text-center">
+                        <img src="./assets/images/black.jpeg" alt="Profile Image" class="img_profile_page" id="profileImage">
+                    </div>
+                    <div class="custom-file mt-3">
+                      <input type="file" class="custom-file-input" id="profileImageInput" accept="image/*" onchange="displayImage()">
+                    </div>
+                    <div class="input-group-append text-center">
+                      <button class="btn upload_btn" type="button" onclick="document.getElementById('profileImageInput').click()">
+                        <i class="img"><img src="./assets/images/photo-camer.png" class="camera_img" alt=""></i> 
+                      </button>
+                    </div>
+                      <h7 class="text-center">ID:BEAM TECH</h7>
+                </div>
+            
+                <form>
+                    <div class="form-floating mb-3 mt-3">
+                      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" value="kumaraguru@mosaique.link" readonly>
+                      <label for="email">メール</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                      <label for="pwd">パスワード</label>
+                    </div>
+                    <div class="d-flex justify-content-end pt-4">
+                    <a href="index.html" class="update_profile_btn btn">プロフィール更新</a>
+                    </div> 
+                    
+                </form>
+            </div>
+        </div>
+    </div> 
+</div>    
+</main>
+
+<footer class="footer">
+    <p  class="text-end">&copy; copyrights BEAM Technology</p>
+  </footer>
+
+<script>
+   fetch('header.html')
+      .then(response => response.text())
+      .then(content => {
+         document.getElementById('header').innerHTML = content;
+      })
+      .catch(error => console.error('Error fetching header content:', error));
+</script>
+<script>
+    fetch('sidebar.html')
+       .then(response => response.text())
+       .then(content => {
+          document.querySelector('.sidebar').innerHTML = content;
+        
+       })
+       .catch(error => console.error('Error fetching footer content:', error));
+ </script>
+<script src="./assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/JS file/Javacsript.js"></script>
+<script src="./assets/JS file/main.js"></script>
+</body>
+</html>
+
+
+
+

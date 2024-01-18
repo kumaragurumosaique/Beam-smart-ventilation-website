@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>部屋設定</title>
+  <link rel="stylesheet" href="./assets/CSS file/sidebar.css">
+	<link rel="icon" type="image/png" href="./assets/images/company_logo2.png"/>
+  <link rel="stylesheet" href="./assets/CSS file/style.css">
+  <link rel="stylesheet" href="./assets/CSS file/header.css">
+  <link rel="stylesheet" href="./assets/CSS file/dashboard.css">
+  <link rel="stylesheet" href="./assets/CSS file/room.css">
+  <link rel="stylesheet" href="./assets/CSS file/footer.css">
+	<link rel="stylesheet" type="text/css" href="./assets/CSS file/main.css">
+  <link href="./assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @media (max-width: 655.98px) {
+      .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .table {
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: 0;
+        
+      }
+
+      .table thead,
+      .table tbody,
+      .table th,
+      .table td,
+      .table tr {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      .table tbody tr {
+        margin-bottom: 15px;
+      }
+
+      .table td {
+        text-align: left;
+        padding-left: 35%;
+      }
+
+      .table td:before {
+        content: attr(data-label);
+        display: inline-block;
+        font-weight: bold;
+        width: 50%;
+        margin-left: -50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container-fluid">
+      <div class="dropdown ms-auto order-1" id="dashboard_dropdown"><span>BEAM TECH</span>
+        <img src="./assets/images/profile.png" class="profile_img border-0" alt="" data-bs-toggle="dropdown" aria-expanded="false">
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="profile_page.html">プロファイル</a></li>
+          <li><a class="dropdown-item" href="index.html">ログアウト</a></li>
+        </ul>
+      </div>
+      <button class="navbar-toggler  d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BEAM TECH</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex justify-content-start">
+          <ul class="navbar-nav text-start fs-5 w-100">
+            <li class="logo">
+              <a class="nav-link" href="dashboard.html">
+                <span class="icon_menu"><img src="./assets/images/dashboard.png" class="sidebar-menu-icon" alt=""></span>
+                <span class="text">ダッシュボード</span></a>
+            </li>
+            <li class="logo">
+              <a class="nav-link" href="room.html">
+                <span class="icon_menu"><img src="./assets/images/door-open.png" class="sidebar-menu-icon" alt=""></span>
+                <span class="text">部屋設定</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="thermometer.html">
+                <span class="icon_menu"><img src="./assets/images/thermometer.png" class="sidebar-menu-icon" alt=""></span>
+                <span class="text">設定</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analysis.html">
+                <span class="icon_menu"><img src="./assets/images/market-research.png" class="sidebar-menu-icon" alt=""></span>
+                <span class="text"> 分析</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="user.html">
+                <span class="icon_menu"><img src="./assets/images/man.png" class="sidebar-menu-icon" alt=""></span>
+                <span class="text">ユーザ</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="icon_menu"><img src="./assets/images/log-out.png" class="sidebar-menu-icon" alt=""></span>
+                <span class="text">ログアウト</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li>
+        <a class="active" href="dashboard.html">
+          <span class="icon"><img class="sidebar-icon-img" src="./assets/images/dashboard.png" alt=""></span>
+          <span class="text">ダッシュボード</span>
+        </a>
+      </li>
+      <li>
+        <a class="active" href="room.html">
+          <span class="icon"><img class="sidebar-icon-img" src="./assets/images/door-open.png" alt=""></span>
+          <span class="text">部屋設定</span>
+        </a>
+      </li>
+      <li>
+        <a class="active" href="thermometer.html">
+          <span class="icon"><img class="sidebar-icon-img" src="./assets/images/thermometer.png" alt=""></span>
+          <span class="text">設定</span>
+        </a>
+      </li>
+      <li>
+        <a class="active" href="analysis.html">
+          <span class="icon"><img class="sidebar-icon-img" src="./assets/images/market-research.png" alt=""></span>
+          <span class="text">分析</span>
+        </a>
+      </li>
+      <li>
+        <a class="active" href="user.html">
+          <span class="icon"><img class="sidebar-icon-img" src="./assets/images/man.png" alt=""></span>
+          <span class="text">ユーザ</span>
+        </a>
+      </li>
+      <li>
+        <a class="active" href="index.html">
+          <span class="icon"><img class="sidebar-icon-img" src="./assets/images/log-out.png" alt=""></span>
+          <span class="text">ログアウト</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <main class="main_content">
+    <div class="container-fluid text-start">
+      <div class="d-flex justify-content-end mt-3 p-3">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#add_room_modal">施設追加</button>
+      </div>
+      <div class="row justify-content-center">
+        <div class="table-responsive table-list col-xxl-10 col-xl-7 col-lg-10 col-md-10 ">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th class="table_heads">No</th>
+                <th class="table_heads">施設名</th>
+                <th class="table_heads">部屋名</th>
+                <th class="table_heads">換気指数</th>
+                <th class="table_heads">温度</th>
+                <th class="table_heads">湿度</th>
+                <th class="table_heads">二酸化炭素</th>
+                <th class="table_heads">換気</th>
+                <th class="table_heads">アクション</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="No"></td>
+                <td data-label="施設名">東京事務所</td>
+                <td data-label="部屋名">2F会議室</td>
+                <td data-label="換気指数"></td>
+                <td data-label="温度">23</td>
+                <td data-label="湿度"></td>
+                <td data-label="二酸化炭素"></td>
+                <td data-label="換気">
+                  <div class="toggle">
+                    <input type="checkbox">
+                    <label for="" class="onbtn">ON</label>
+                    <label for="" class="ofbtn">OFF</label>
+                </td>
+                <td data-label="アクション"><span class="room_update"><button type="button" class="room_update" data-bs-toggle="modal" data-bs-target="#update_room_modal">編集
+                </button></span><span> | </span><span
+                  class="room_delete"><button type="button" class="room_delete" data-bs-toggle="modal" data-bs-target="#delete_room_modal">削除
+                  </button></span></td>
+              </tr>
+              <tr>
+                <td data-label="No"></td>
+                <td data-label="施設名">東京事務所</td>
+                <td data-label="部屋名">2F会議室</td>
+                <td data-label="換気指数"></td>
+                <td data-label="温度">24</td>
+                <td data-label="湿度"></td>
+                <td data-label="二酸化炭素"></td>
+                <td data-label="換気">
+                  <div class="toggle">
+                    <input type="checkbox">
+                    <label for="" class="onbtn">ON</label>
+                    <label for="" class="ofbtn">OFF</label>
+                  </div>
+                </td>
+                <td data-label="アクション"><span class="room_update"><button type="button" class="room_update" data-bs-toggle="modal" data-bs-target="#update_room_modal">編集
+                </button></span><span> | </span><span
+                  class="room_delete"><button type="button" class="room_delete" data-bs-toggle="modal" data-bs-target="#delete_room_modal">削除
+                  </button></span></td>
+              </tr>
+              <tr>
+                <td data-label="No"></td>
+                <td data-label="施設名">東京事務所</td>
+                <td data-label="部屋名">2F会議室</td>
+                <td data-label="換気指数"></td>
+                <td data-label="温度">18</td>
+                <td data-label="湿度"></td>
+                <td data-label="二酸化炭素"></td>
+                <td data-label="換気">
+                  <div class="toggle">
+                    <input type="checkbox">
+                    <label for="" class="onbtn">ON</label>
+                    <label for="" class="ofbtn">OFF</label>
+                  </div>
+                </td>
+                <td data-label="アクション"><span class="room_update"><button type="button" class="room_update" data-bs-toggle="modal" data-bs-target="#update_room_modal">編集
+                  </button></span><span> | </span><span
+                    class="room_delete"><button type="button" class="room_delete" data-bs-toggle="modal" data-bs-target="#delete_room_modal">削除
+                    </button></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="text-end">&copy; copyrights BEAM Technology</p>
+  </footer>
+  <div class="modal fade" id="add_room_modal" tabindex="-1" aria-labelledby="add_room_modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="add_room_modalLabel">施設追加</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="text" value="" required>
+						<span class="focus-input100" data-placeholder="施設名"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="text" value="" required>
+						<span class="focus-input100" data-placeholder="部屋名"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="text" value="" required>
+						<span class="focus-input100" data-placeholder="換気指数"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="number" name="text" value="" required>
+						<span class="focus-input100" data-placeholder="温度"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="text" value="" required>
+						<span class="focus-input100" data-placeholder="湿度"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="text" value="" required>
+						<span class="focus-input100" data-placeholder="二酸化炭素"></span>
+					</div>
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn" data-bs-dismiss="modal">送信</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="update_room_modal" tabindex="-1" aria-labelledby="update_room_modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="update_room_modalLabel">施設編集</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="email" value="" required>
+						<span class="focus-input100" data-placeholder="施設名"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="email" value="" required>
+						<span class="focus-input100" data-placeholder="部屋名"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="email" value="" required>
+						<span class="focus-input100" data-placeholder="換気指数"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="email" value="" required>
+						<span class="focus-input100" data-placeholder="温度"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="email" value="" required>
+						<span class="focus-input100" data-placeholder="湿度"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "">
+						<input class="input100" type="text" name="email" value="" required>
+						<span class="focus-input100" data-placeholder="二酸化炭素"></span>
+					</div>
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn" data-bs-dismiss="modal">送信</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="delete_room_modal" tabindex="-1" aria-labelledby="delete_room_modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 delete_action_modal" id="delete_room_modalLabel">施設削除</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="">施設を削除してもよろしいですか？</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">閉じる</button>
+        <button type="button" class="btn">送信</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(content => {
+        document.getElementById('header').innerHTML = content;
+      })
+      .catch(error => console.error('Error fetching header content:', error));
+  </script> -->
+  <script src="./assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

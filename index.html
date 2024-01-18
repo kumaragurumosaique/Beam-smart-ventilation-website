@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ログイン</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./assets/images/company_logo2.png"/>
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="./assets/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="./assets/CSS file/main.css">
+    <link href="./assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login-page">
+			<div class="wrap-login-page">
+				<form class="login-page-form validate-form">
+					<span class="login-page-form-title pb-4">
+						<img class="company_profile" src="./assets/images/company_logo2.png" alt="">
+					</span>
+					<span class="login-page-form-title pb-5">
+						ログイン
+					</span>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input class="input100" type="text" name="email" value=""` required>
+						<span class="focus-input100" data-placeholder="メール"></span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="pass" value="" required >
+						<span class="focus-input100" data-placeholder="パスワード"></span>
+					</div>
+					<div class="form-check pb-3">
+						<input class="form-check-input bordered" type="checkbox" value="" id="flexCheckChecked" checked required>
+						<label class="form-check-label" for="flexCheckChecked">
+							ログイン状態を維持する
+						</label>
+					  </div>
+					<div class="container-login-page-form-btn pb-4">
+						<div class="wrap-login-page-form-btn">
+							<div class="login-page-form-bgbtn"></div>
+						<a class="login-page-form-btn text-decoration-none" href="./dashboard.html" id="loginbtnID">
+							ログイン
+						</a>	
+						</div>
+					</div>
+					<div class="text-center pb-1">
+						
+						<button type="button" class="forgot" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							パスワードをお忘れですか?
+						  </button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h1 class="modal-title password_reset_title fs-6 " id="exampleModalLabel">パスワードリセット</h1>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body forgot_password_modal">
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+					<input class="input100" type="text" name="email" required>
+					<span class="focus-input100" data-placeholder="メール"></span>
+				</div>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn modal-close" data-bs-dismiss="modal">閉じる</button>
+			  <button type="button" class="btn modal-send" data-bs-dismiss="modal">送信</button>
+			</div>
+		  </div>
+		</div>
+	  </div> 
+	<script src="./assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="./assets/vendor/animsition/js/animsition.min.js"></script>
+	<script src="./assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="./assets/JS file/main.js"></script>
+	<script src="./assets/JS file/Javacsript.js"></script>
+</body>
+</html>

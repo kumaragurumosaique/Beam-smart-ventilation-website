@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="./assets/images/company_logo2.png"/>
+    <link rel="stylesheet" href="./assets/CSS file/sidebar.css">
+    <link rel="stylesheet" href="./assets/CSS file/style.css">
+    <link rel="stylesheet" href="./assets/CSS file/header.css">
+    <link rel="stylesheet" href="./assets/CSS file/thermometer.css">
+    <link rel="stylesheet" href="./assets/CSS file/analysis.css">
+    <link rel="stylesheet" href="./assets/CSS file/footer.css">
+    <link href="./assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>分析</title>
+
+</head>
+<body>
+   <header id="header">
+   </header>
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li class="logo">
+            <a class="active" href="dashboard.html">
+                <span class="icon"><img src="./assets/images/dashboard.png" class="sidebar-icon-img" alt=""></span>
+   <span class="text">ダッシュボード</span>
+            </a>
+        </li>
+        <li>
+            <a class="active" href="room.html">
+                <span class="icon"><img src="./assets/images/door-open.png" class="sidebar-icon-img" alt=""></span>
+   <span class="text">部屋設定</span>
+            </a>
+        </li>
+        <li>
+            <a class="active" href="thermometer.html">
+                <span class="icon"><img src="./assets/images/thermometer.png" class="sidebar-icon-img" alt=""></span>
+   <span class="text">設定</span>
+            </a>
+        </li>
+        <li>
+            <a class="active" href="analysis.html">
+                <span class="icon"><img src="./assets/images/market-research.png" class="sidebar-icon-img" alt=""></span>
+   <span class="text">分析</span>
+            </a>
+        </li>
+        <li>
+            <a class="active" href="user.html">
+                <span class="icon"><img src="./assets/images/man.png" class="sidebar-icon-img" alt=""></span>
+   <span class="text">ユーザ</span>
+            </a>
+        </li>
+        <li>
+            <a class="active" href="index.html">
+                <span class="icon"><img src="./assets/images/log-out.png" class="sidebar-icon-img" alt=""></span>
+    <span class="text">ログアウト</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<footer class="footer fixed-bottom">
+    <p  class="text-end">&copy; copyrights BEAM Technology</p>
+  </footer>
+<script>
+   fetch('header.html')
+      .then(response => response.text())
+      .then(content => {
+         document.getElementById('header').innerHTML = content;
+      })
+      .catch(error => console.error('Error fetching header content:', error));
+</script>
+
+
+<script>
+    fetch('sidebar.html')
+       .then(response => response.text())
+       .then(content => {
+          document.querySelector('.sidebar').innerHTML = content;
+        
+       })
+       .catch(error => console.error('Error fetching footer content:', error));
+ </script>
+<script src="./assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
